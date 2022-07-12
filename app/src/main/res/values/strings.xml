@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="HelloText">Hello World!</string>
+    <string name="rollDiceRules">To pass is to roll a 7 or 11 on the come out roll.</string>
 </resources>
