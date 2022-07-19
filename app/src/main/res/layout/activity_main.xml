@@ -11,7 +11,36 @@
         tools:context=".MainActivity"
         >
 
-    <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editPlayerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="@string/editPlayerName"
+                 />
+
+            <Button
+                android:id="@+id/updatePlayerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/updatePlayerNameTxt"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/playername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/playername" />
+
+        <TextView
         android:id="@+id/numbertext"
         android:layout_width="236dp"
         android:layout_height="wrap_content"
@@ -41,5 +70,23 @@
             android:layout_gravity="center_horizontal"
             android:text="Button" />
 
-    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rulesTxt" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
 
